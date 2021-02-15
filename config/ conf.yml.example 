@@ -1,0 +1,4 @@
+url: "SITE_URL"
+bot:
+  chat: CHAT_ID
+  token: "BOT_TOKEN"
