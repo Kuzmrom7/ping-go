@@ -2,12 +2,13 @@ package pkg
 
 import (
 	"context"
+	"log"
+	"math"
+
 	"github.com/Kuzmrom7/ping-go/config"
 	"github.com/chromedp/cdproto/emulation"
 	"github.com/chromedp/cdproto/page"
 	"github.com/chromedp/chromedp"
-	"log"
-	"math"
 )
 
 func Run(cfg *config.Configurations) {
@@ -23,6 +24,8 @@ func Run(cfg *config.Configurations) {
 	err := SendPhoto(imageBuf, cfg.Bot)
 	if err != nil {
 		log.Println(err)
+	} else {
+		log.Println("Photo successfully sent")
 	}
 }
 

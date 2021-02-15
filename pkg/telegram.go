@@ -1,9 +1,10 @@
 package pkg
 
 import (
+	"log"
+
 	"github.com/Kuzmrom7/ping-go/config"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
-	"log"
 )
 
 func SendPhoto(imageBuf []byte, botConfig *config.Bot) error {
