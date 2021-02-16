@@ -56,7 +56,7 @@ func screenshotTasks(url string, imageBuf *[]byte) chromedp.Tasks {
 				Width:  contentSize.Width,
 				Height: contentSize.Height,
 				Scale:  1,
-			}).WithQuality(90).Do(ctx)
+			}).WithQuality(100).Do(ctx)
 
 			return err
 		}),

@@ -1,4 +1,5 @@
 url: "SITE_URL"
+timeout: 1
 bot:
   chat: CHAT_ID
   token: "BOT_TOKEN"
