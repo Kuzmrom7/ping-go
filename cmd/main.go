@@ -1,10 +1,11 @@
 package main
 
 import (
+	"log"
+
 	"github.com/Kuzmrom7/ping-go/config"
 	"github.com/Kuzmrom7/ping-go/pkg"
 	"github.com/spf13/viper"
-	"log"
 )
 
 func main() {
@@ -26,5 +27,5 @@ func main() {
 	}
 
 	/* Run screenshot job */
-	pkg.Run(cfg)
+	pkg.RunJob(pkg.Run, cfg)
 }
