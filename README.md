@@ -12,7 +12,7 @@
 3. Build
 
     ```
-    go build -o main .
+    go build -o main ./cmd/main.go
     ```
 4. Run
     ```

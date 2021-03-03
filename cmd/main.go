@@ -26,6 +26,11 @@ func main() {
 		log.Printf("Unable to decode into struct, %v", err)
 	}
 
-	/* Run screenshot job */
-	pkg.RunJob(pkg.Run, cfg)
+	/* First run */
+	pkg.Run(cfg)
+
+	/* Run job */
+	if err := pkg.RunJob(pkg.Run, cfg); err != nil {
+		log.Println(err)
+	}
 }

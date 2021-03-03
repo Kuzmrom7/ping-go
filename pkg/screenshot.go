@@ -25,7 +25,7 @@ func Run(cfg *config.Configurations) {
 	if err != nil {
 		log.Println(err)
 	} else {
-		log.Println("Photo successfully sent")
+		log.Println("Photo successfully sent!")
 	}
 }
 
